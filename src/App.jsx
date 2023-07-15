@@ -25,7 +25,6 @@ function App() {
   const fetchApiConfig = () => {
     fetchDataFromApi('/configuration')
       .then((data) => {
-        console.log(data);
 
         const url = {
           backrop: data.images.secure_base_url + 'original', 
